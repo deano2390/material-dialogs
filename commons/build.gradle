@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.novoda.bintray-release'
 apply from: '../gradle/dependencies.gradle'
 
 android {
@@ -34,14 +33,7 @@ dependencies {
     implementation project(':core')
 }
 
-publish {
-    userOrg = 'novoda'
-    groupId = 'com.afollestad.material-dialogs'
-    artifactId = 'commons'
-    publishVersion = versions.publishVersion
-    website = 'https://github.com/afollestad/material-dialogs'
-    desc = 'A beautiful, fluid, and customizable dialogs API. '
-}
+
 repositories {
     mavenCentral()
 }

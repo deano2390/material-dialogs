@@ -76,7 +76,7 @@ public class MaterialDialog extends DialogBase
   TextView progressLabel;
   TextView progressMinMax;
   TextView inputMinMax;
-  CheckBox checkBoxPrompt;
+  protected CheckBox checkBoxPrompt;
   MDButton positiveButton;
   MDButton neutralButton;
   MDButton negativeButton;
@@ -1394,7 +1394,7 @@ public class MaterialDialog extends DialogBase
     }
 
     public Builder content(@StringRes int contentRes) {
-      return content(contentRes, false);
+      return content(contentRes, true);
     }
 
     public Builder content(@StringRes int contentRes, boolean html) {
